@@ -6,25 +6,90 @@
     <title>Cleaning Services in London | Office, Restaurant & Commercial Cleaning</title>
     <meta name="description" content="Top-rated cleaning company in London. We provide expert office cleaning, restaurant cleaning, and commercial cleaning services. Get a free quote from Arias Cleaning Services.">
     <meta name="keywords" content="cleaning services London, office cleaning London, restaurant cleaning London, commercial cleaning, Arias Cleaning Services, cleaning company London, London cleaners, commercial janitorial services, London office hygiene">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ariascleaning.netlify.app/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ariascleaning.netlify.app/">
+    <meta property="og:title" content="Arias Cleaning Services | London Office, Restaurant & Commercial Cleaning">
+    <meta property="og:description" content="Top-rated cleaning company in London. We provide expert office cleaning, restaurant cleaning, and commercial cleaning services. Get a free quote from Arias Cleaning Services.">
+    <meta property="og:image" content="https://ariascleaning.netlify.app/images/london-skyline.webp">
+    <meta property="og:site_name" content="Arias Cleaning Services">
+    <meta property="og:locale" content="en_GB">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ariascleaning.netlify.app/">
+    <meta property="twitter:title" content="Arias Cleaning Services | London Office, Restaurant & Commercial Cleaning">
+    <meta property="twitter:description" content="Top-rated cleaning company in London. We provide expert office cleaning, restaurant cleaning, and commercial cleaning services. Get a free quote from Arias Cleaning Services.">
+    <meta property="twitter:image" content="https://ariascleaning.netlify.app/images/london-skyline.webp">
+
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "LocalBusiness",
-          "name": "Arias Cleaning Services",
-          "image": "https://ariascleaning-service.netlify.app/arias-logo.png",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "123 Example Street",
-            "addressLocality": "London",
-            "addressCountry": "UK"
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Arias Cleaning Services",
+      "image": "https://ariascleaning.netlify.app/images/arias-logo.png",
+      "url": "https://ariascleaning.netlify.app/",
+      "telephone": "+44 7123 456789",
+      "description": "We offer professional cleaning services for offices, restaurants and commercial spaces in London.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Example Street",
+        "addressLocality": "London",
+        "addressCountry": "UK"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Greater London"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Cleaning Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Professional Office Cleaning"
+            }
           },
-          "telephone": "+44 7123 456789",
-          "url": "https://ariascleaning-service.netlify.app",
-          "description": "We offer professional cleaning services for offices, restaurants and commercial spaces in London."
-        }
-        </script>        
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Hygienic Restaurant Cleaning"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Reliable Commercial Cleaning"
+            }
+          }
+        ]
+      },
+      "potentialAction": {
+        "@type": "QuoteAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://ariascleaning.netlify.app/#contact",
+          "inLanguage": "en-GB",
+          "actionPlatform": [
+            "http://schema.org/DesktopWebPlatform",
+            "http://schema.org/IOSPlatform",
+            "http://schema.org/AndroidPlatform"
+          ]
+        },
+        "name": "Get a Free Quote"
+      }
+    }
+    </script>        
 </head>
 <body>
     <!-- Header Section -->
@@ -34,7 +99,7 @@
                 <img src="images/arias-logo.png" alt="Arias Luxury Cleaning Services" class="logo-img">
             </div>
             <nav class="main-nav">
-                <ul>
+                <ul id="mainNavList">
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#services" class="nav-link">Services</a></li>
                     <li><a href="#about" class="nav-link">About Us</a></li>
@@ -42,7 +107,7 @@
                     <li><a href="#contact" class="nav-link btn-nav">Contact Us</a></li>
                 </ul>
             </nav>
-            <div class="mobile-menu-btn">
+            <div class="mobile-menu-btn" role="button" tabindex="0" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mainNavList">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -50,278 +115,280 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero" style="background-image: url('images/london-skyline.webp');">
-        <div class="container">
-            <div class="hero-content glass-panel">
-                <h1>Professional Cleaning Solutions for London Businesses</h1>
-                <p>Specializing in offices, restaurants, and commercial properties across London</p>
-                <a href="#contact" class="btn btn-primary cta-btn">Get a Free Quote</a>
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero" style="background-image: url('images/london-skyline.webp');">
+            <div class="container">
+                <div class="hero-content glass-panel">
+                    <h1>Professional Cleaning Solutions for London Businesses</h1>
+                    <p>Specializing in offices, restaurants, and commercial properties across London</p>
+                    <a href="#contact" class="btn btn-primary cta-btn">Get a Free Quote</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <h2>London Cleaning Services for Offices, Restaurants, and Commercial Spaces</h2>
-                <p>Tailored cleaning solutions to meet the unique needs of London's businesses</p>
-            </div>
-            <div class="services-grid">
-                <!-- Office Cleaning Card -->
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="images/office-cleaning.webp" alt="Professional Office Cleaning Service in London">
-                        <div class="service-icon">
-                            <i class="fas fa-building"></i>
-                        </div>
-                    </div>
-                    <div class="service-content">
-                        <h3>Professional Office Cleaning in London</h3>
-                        <p>Create clean, productive workspaces that impress clients and motivate staff. Our office cleaning services ensure your business environment remains spotless and hygienic.</p>
-                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                    </div>
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>London Cleaning Services for Offices, Restaurants, and Commercial Spaces</h2>
+                    <p>Tailored cleaning solutions to meet the unique needs of London's businesses</p>
                 </div>
-
-                <!-- Restaurant Cleaning Card -->
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="images/restaurant-cleaning.webp" alt="Hygienic Restaurant Cleaning in London – Kitchens and Dining Areas">
-                        <div class="service-icon">
-                            <i class="fas fa-utensils"></i>
-                        </div>
-                    </div>
-                    <div class="service-content">
-                        <h3>Hygienic Restaurant Cleaning Services</h3>
-                        <p>Maintain the highest hygiene standards and health regulations with our specialized restaurant cleaning services. We help ensure your dining areas and kitchens remain immaculate.</p>
-                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <!-- Commercial Cleaning Card -->
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="images/commercial-cleaning.webp" alt="Reliable Commercial Cleaning Services for London Businesses">
-                        <div class="service-icon">
-                            <i class="fas fa-store"></i>
-                        </div>
-                    </div>
-                    <div class="service-content">
-                        <h3>Reliable Commercial Cleaning for Businesses</h3>
-                        <p>Comprehensive cleaning solutions for various commercial properties. We tailor our services to meet the specific requirements of your business premises.</p>
-                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section id="about" class="why-choose-us">
-        <div class="container">
-            <div class="section-header">
-                <h2>Why Choose Us</h2>
-                <p>With over 10 years of experience serving London businesses</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>Exceptional Quality</h3>
-                    <p>Our meticulous attention to detail ensures consistently outstanding results for every client.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <h3>Reliability</h3>
-                    <p>Count on our punctual, dependable service that works around your business schedule.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield"></i>
-                    </div>
-                    <h3>Fully Insured & Vetted</h3>
-                    <p>All our staff are thoroughly vetted and we maintain comprehensive insurance coverage.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-leaf"></i>
-                    </div>
-                    <h3>Eco-Friendly</h3>
-                    <p>We use environmentally responsible cleaning products and sustainable practices.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2>What Our Clients Say</h2>
-                <p>Trusted by businesses across London</p>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="quote-mark"><i class="fas fa-quote-left"></i></div>
-                    <p class="testimonial-text">Arias has transformed our office environment. Their attention to detail and reliability has made them an essential partner for our business.</p>
-                    <div class="client-info">
-                        <img src="images/testimonial-1.webp" alt="Sarah Johnson, Office Manager at TechStart Ltd">
-                        <div>
-                            <h4>Sarah Johnson</h4>
-                            <p>Office Manager, TechStart Ltd</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="quote-mark"><i class="fas fa-quote-left"></i></div>
-                    <p class="testimonial-text">As a restaurant owner, hygiene is paramount. Arias consistently delivers exceptional cleaning that meets our strict standards and health regulations.</p>
-                    <div class="client-info">
-                        <img src="images/testimonial-2.webp" alt="Silvia Rossi">
-                        <div>
-                            <h4>Silvia Rossi</h4>
-                            <p>Owner, Bella Cucina Restaurant</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="quote-mark"><i class="fas fa-quote-left"></i></div>
-                    <p class="testimonial-text">Managing multiple commercial properties requires reliable partners. Arias provides consistent quality across all our locations with excellent communication.</p>
-                    <div class="client-info">
-                        <img src="images/testimonial-3.webp" alt="Sophia Chen">
-                        <div>
-                            <h4>Sophia Chen</h4>
-                            <p>Facilities Manager, London Properties Group</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call-to-Action Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready for a Cleaner Business Environment?</h2>
-                <p>Let us create a customized cleaning solution for your London business</p>
-                <a href="#contact" class="btn btn-light">Schedule a Consultation</a>
-                <div class="cta-images">
-                    <div class="cta-image">
-                        <img src="images/office-cleaning.webp" alt="Office Cleaning">
-                    </div>
-                    <div class="cta-image">
-                        <img src="images/restaurant-cleaning.webp" alt="Restaurant Cleaning">
-                    </div>
-                    <div class="cta-image">
-                        <img src="images/commercial-cleaning.webp" alt="Commercial Cleaning">
-                    </div>
-                    <div class="cta-image">
-                        <img src="images/london-skyline.webp" alt="London skyline background for Arias Cleaning Services">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="section-header">
-                        <h2>Contact Us</h2>
-                        <p>Get in touch for a customized cleaning quote</p>
-                    </div>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <p>ariascleaning@hotmail.com</p>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <p>Serving all London boroughs</p>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="contact-form-container">
-                    <form id="quote-form" class="quote-form" action="https://formspree.io/f/xdkzonzk" method="POST">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required>
-                            <span class="error-message" id="name-error"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required>
-                            <span class="error-message" id="email-error"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" required>
-                            <span class="error-message" id="phone-error"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="address">Business Address</label>
-                            <input type="text" id="address" name="address" required>
-                            <span class="error-message" id="address-error"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="service">Service Type</label>
-                            <select id="service" name="service" required>
-                                <option value="" disabled selected>Select a service</option>
-                                <option value="office">Office Cleaning</option>
-                                <option value="restaurant">Restaurant Cleaning</option>
-                                <option value="commercial">Commercial Cleaning</option>
-                                <option value="other">Other (Please specify)</option>
-                            </select>
-                            <span class="error-message" id="service-error"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="size">Property Size</label>
-                            <select id="size" name="size" required>
-                                <option value="" disabled selected>Select property size</option>
-                                <option value="small">Small (Up to 1,000 sq ft)</option>
-                                <option value="medium">Medium (1,000 - 5,000 sq ft)</option>
-                                <option value="large">Large (5,000 - 10,000 sq ft)</option>
-                                <option value="xlarge">Extra Large (10,000+ sq ft)</option>
-                            </select>
-                            <span class="error-message" id="size-error"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Additional Details</label>
-                            <textarea id="message" name="message" rows="4"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <div class="checkbox-container">
-                                <input type="checkbox" id="privacy" name="privacy" required>
-                                <label for="privacy" class="checkbox-label">I agree to the privacy policy and terms of service</label>
+                <div class="services-grid">
+                    <!-- Office Cleaning Card -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/office-cleaning.webp" alt="Professional Office Cleaning Service in London">
+                            <div class="service-icon">
+                                <i class="fas fa-building"></i>
                             </div>
-                            <span class="error-message" id="privacy-error"></span>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-full">Request a Quote</button>
-                        <div id="form-success" class="form-success" style="display: none;">
-                            <div class="success-icon">
-                                <i class="fas fa-check-circle"></i>
+                        <div class="service-content">
+                            <h3>Professional Office Cleaning in London</h3>
+                            <p>Create clean, productive workspaces that impress clients and motivate staff. Our office cleaning services ensure your business environment remains spotless and hygienic.</p>
+                            <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Restaurant Cleaning Card -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/restaurant-cleaning.webp" alt="Hygienic Restaurant Cleaning in London – Kitchens and Dining Areas">
+                            <div class="service-icon">
+                                <i class="fas fa-utensils"></i>
                             </div>
-                            <h3>Thank You!</h3>
-                            <p>Your quote request has been submitted successfully. One of our representatives will contact you shortly.</p>
                         </div>
-                    </form>
+                        <div class="service-content">
+                            <h3>Hygienic Restaurant Cleaning Services</h3>
+                            <p>Maintain the highest hygiene standards and health regulations with our specialized restaurant cleaning services. We help ensure your dining areas and kitchens remain immaculate.</p>
+                            <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Commercial Cleaning Card -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/commercial-cleaning.webp" alt="Reliable Commercial Cleaning Services for London Businesses">
+                            <div class="service-icon">
+                                <i class="fas fa-store"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Reliable Commercial Cleaning for Businesses</h3>
+                            <p>Comprehensive cleaning solutions for various commercial properties. We tailor our services to meet the specific requirements of your business premises.</p>
+                            <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="about" class="why-choose-us">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why Choose Us</h2>
+                    <p>With over 10 years of experience serving London businesses</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Exceptional Quality</h3>
+                        <p>Our meticulous attention to detail ensures consistently outstanding results for every client.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Reliability</h3>
+                        <p>Count on our punctual, dependable service that works around your business schedule.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield"></i>
+                        </div>
+                        <h3>Fully Insured & Vetted</h3>
+                        <p>All our staff are thoroughly vetted and we maintain comprehensive insurance coverage.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Eco-Friendly</h3>
+                        <p>We use environmentally responsible cleaning products and sustainable practices.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What Our Clients Say</h2>
+                    <p>Trusted by businesses across London</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="quote-mark"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">Arias has transformed our office environment. Their attention to detail and reliability has made them an essential partner for our business.</p>
+                        <div class="client-info">
+                            <img src="images/testimonial-1.webp" alt="Sarah Johnson, Office Manager at TechStart Ltd">
+                            <div>
+                                <h4>Sarah Johnson</h4>
+                                <p>Office Manager, TechStart Ltd</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="quote-mark"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">As a restaurant owner, hygiene is paramount. Arias consistently delivers exceptional cleaning that meets our strict standards and health regulations.</p>
+                        <div class="client-info">
+                            <img src="images/testimonial-2.webp" alt="Silvia Rossi, Owner, Bella Cucina Restaurant">
+                            <div>
+                                <h4>Silvia Rossi</h4>
+                                <p>Owner, Bella Cucina Restaurant</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="quote-mark"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">Managing multiple commercial properties requires reliable partners. Arias provides consistent quality across all our locations with excellent communication.</p>
+                        <div class="client-info">
+                            <img src="images/testimonial-3.webp" alt="Sophia Chen, Facilities Manager, London Properties Group">
+                            <div>
+                                <h4>Sophia Chen</h4>
+                                <p>Facilities Manager, London Properties Group</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call-to-Action Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready for a Cleaner Business Environment?</h2>
+                    <p>Let us create a customized cleaning solution for your London business</p>
+                    <a href="#contact" class="btn btn-light">Schedule a Consultation</a>
+                    <div class="cta-images">
+                        <div class="cta-image">
+                            <img src="images/office-cleaning.webp" alt="Office Cleaning">
+                        </div>
+                        <div class="cta-image">
+                            <img src="images/restaurant-cleaning.webp" alt="Restaurant Cleaning">
+                        </div>
+                        <div class="cta-image">
+                            <img src="images/commercial-cleaning.webp" alt="Commercial Cleaning">
+                        </div>
+                        <div class="cta-image">
+                            <img src="images/london-skyline.webp" alt="London skyline background for Arias Cleaning Services">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="section-header">
+                            <h2>Contact Us</h2>
+                            <p>Get in touch for a customized cleaning quote</p>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <p>ariascleaning@hotmail.com</p>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Serving all London boroughs</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link" aria-label="Subscribe to our YouTube channel"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <form id="quote-form" class="quote-form" action="https://formspree.io/f/xdkzonzk" method="POST">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="error-message" id="name-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="email-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required>
+                                <span class="error-message" id="phone-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Business Address</label>
+                                <input type="text" id="address" name="address" required>
+                                <span class="error-message" id="address-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service Type</label>
+                                <select id="service" name="service" required>
+                                    <option value="" disabled selected>Select a service</option>
+                                    <option value="office">Office Cleaning</option>
+                                    <option value="restaurant">Restaurant Cleaning</option>
+                                    <option value="commercial">Commercial Cleaning</option>
+                                    <option value="other">Other (Please specify)</option>
+                                </select>
+                                <span class="error-message" id="service-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="size">Property Size</label>
+                                <select id="size" name="size" required>
+                                    <option value="" disabled selected>Select property size</option>
+                                    <option value="small">Small (Up to 1,000 sq ft)</option>
+                                    <option value="medium">Medium (1,000 - 5,000 sq ft)</option>
+                                    <option value="large">Large (5,000 - 10,000 sq ft)</option>
+                                    <option value="xlarge">Extra Large (10,000+ sq ft)</option>
+                                </select>
+                                <span class="error-message" id="size-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Additional Details</label>
+                                <textarea id="message" name="message" rows="4"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="privacy" name="privacy" required>
+                                    <label for="privacy" class="checkbox-label">I agree to the privacy policy and terms of service</label>
+                                </div>
+                                <span class="error-message" id="privacy-error"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">Request a Quote</button>
+                            <div id="form-success" class="form-success" style="display: none;">
+                                <div class="success-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <h3>Thank You!</h3>
+                                <p>Your quote request has been submitted successfully. One of our representatives will contact you shortly.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer Section -->
     <footer class="footer">
@@ -369,11 +436,11 @@
                         <div class="footer-social">
                             <h3>Stay Connected</h3>
                             <div class="social-links large">
-                                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                                <a href="#" class="social-link" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-link" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-link" aria-label="Subscribe to our YouTube channel"><i class="fab fa-youtube"></i></a>
                             </div>
                         </div>
                     </div>
@@ -382,11 +449,11 @@
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <p>&copy; 2025 ARIAS CLEANING SERVICES. All Rights Reserved.</p>
+                <p>© 2025 ARIAS CLEANING SERVICES. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>
